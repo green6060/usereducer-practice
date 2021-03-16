@@ -1,15 +1,13 @@
 import './App.css';
+import ToDoHeader from './Components/ToDoHeader';
+import ToDoInput from './Components/ToDoInput';
 
 function App() {
-  let dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-  const currentDate = new Date().toLocaleString('en-us', dateOptions)
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          To Do List: {currentDate}
-        </p>
-        
+        <ToDoHeader/>
+        <ToDoInput/>
       </header>
     </div>
   );
